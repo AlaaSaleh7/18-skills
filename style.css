@@ -1,0 +1,89 @@
+body {
+    background-color: black;
+}
+
+.my-skills {
+   padding:80px
+}
+
+.my-skills .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+@media (min-width: 992px) {
+    .my-skills .container>div {
+        flex-basis: 45%;
+    }
+}
+.my-skills h2 {
+    color: white;
+    margin: 0 0 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.my-skills .container>div>h3 {
+    color: white;
+    margin: 0 0 30px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.my-skills .container>div>p {
+    color: white;
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.my-skills .skills .prog-holder {
+    margin-bottom: 40px;
+}
+
+.my-skills .skills .prog-holder h4 {
+    color: white;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.my-skills .container .experiences button {
+    background-color: #6D7EB8;
+    text-align: center;
+    padding: 8px;
+    width: 100px;
+    color: white;
+}
+
+.my-skills .skills .prog-holder .prog {
+    background-color: #dedadc;
+    height: 20px;
+}
+
+.my-skills .skills .prog-holder .prog span {
+    display: block;
+    height: 100%;
+    position: relative;
+}
+
+.my-skills .skills .prog-holder .prog span::before {
+    content: attr(data-progress);
+    position: absolute;
+    color: white;
+    top: -40px;
+    right: -18px;
+    padding: 4px 0;
+    width: 40px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.my-skills .skills .prog-holder .prog span::after {
+    content: "";
+    position: absolute;
+    border-width: 8px;
+    right: -8px;
+    top: -15px;
+}
